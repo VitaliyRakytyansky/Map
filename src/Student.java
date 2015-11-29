@@ -42,5 +42,7 @@ public class Student {
 		return "Name is" + this.name + " Age is " + this.age;
 	}
 	
-	
+	public Identifecator getIdentifecator(){
+		return new Identifecator(this.name + this.age);  
+	}
 }
