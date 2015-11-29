@@ -39,7 +39,7 @@ public class Student {
 	
 	@Override
 	public String toString(){
-		return "Name is" + this.name + " Age is " + this.age;
+		return "Name is " + this.name + " Age is " + this.age;
 	}
 	
 	public Identifecator getIdentifecator(){
