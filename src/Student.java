@@ -24,6 +24,23 @@ public class Student {
 		this.age = age;
 	}
 	
+	@Override
+	public boolean equals(Object obj){
+		if(!(obj instanceof Student)) return false; 
+		Student st = (Student) obj;
+		if(this.getName().equals(st.getName()) && this.getAge() == st.getAge()) return true;
+		return false;
+	}
+	
+	@Override
+	public int hashCode(){
+		return name.length();
+	}
+	
+	@Override
+	public String toString(){
+		return "Name is" + this.name + " Age is " + this.age;
+	}
 	
 	
 }
